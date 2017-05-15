@@ -9,6 +9,7 @@
     src: url(fonts/Stellar-Bold.otf);
 }
 
+
 body {
     margin: 0;
     background-color: #c92424;
@@ -22,11 +23,13 @@ body {
     font-family: Stellar-Light;
 }
 
-.top {
+.top {    
+    z-index: 1000;
         top: 10px;
 }
 
 .bottom {
+    z-index: 1000;
         bottom: 10px;
 }
 
@@ -72,15 +75,87 @@ a.main-nav:hover, .bottom a:hover {
     padding: 6px 0px 6px 150px;
 }
 
-.main {
-    background-image: url(img/mil-bg.png);
+.main-bg {
     background-size: 100%;
     background-position: bottom center;
     background-repeat: no-repeat;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.main-main-bg {
+    background-size: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-image: url(img/bg.png);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+}
+
+
+.transition {
+  -webkit-transition: all 0.7s ease;  
+  -moz-transition: all 0.7s ease;  
+  -o-transition: all 0.7s ease;  
+  -ms-transition: all 0.7s ease;  
+  transition: all 0.7s ease;
+}
+
+.main, .main-bg {
     height: 100vh;
     width: 100vw;
     margin: 0 auto;
 }
+
+.main {
+    position: relative;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.brno-bg {
+    background-image: url(img/brno-bg.png);
+
+}
+
+.got-bg {
+    background-image: url(img/gbg-bg.png);
+
+}
+
+.mil-bg {
+    background-image: url(img/mil-bg.png);
+
+}
+
+.opacity-1 {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+
 
 h1.about-me {
     color: white;
@@ -133,21 +208,26 @@ h1.about-me {
     padding-top: 16px;
 }
 
+.test-box {
+    display: block;
+    align-self: center;
+    max-width: 420px;
+}
+
 p.tldr {
     background-color: #3f0051;
     color: white;
     text-transform: uppercase;
     font-family: Stellar-Bold;
     font-size: 30px;
-    max-width: 330px;
-    padding: 12px;
-    line-height: 36px;
-    overflow: hidden;
+    line-height: 45px;
     display: inline;
-    align-self: center;
+    -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+    padding: 8px 8px 3px 8px;
 }
 
-p.tldr span, .back a span {
+p.tldr span, .back a span, h1.about-me span {
     color: #ffcc33;
 }
 
@@ -155,9 +235,6 @@ p.tldr span, .back a span {
     width: 100%;
 }
 
-#about ul.full-list li:nth-child(3n+1) {
-
-}
 
 .date {
     font-size: 14px;
@@ -186,5 +263,6 @@ p.tldr span, .back a span {
 
 .back a:hover {
     text-decoration: underline;
+    color: #3f0051;
 }
 
