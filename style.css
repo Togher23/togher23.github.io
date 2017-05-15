@@ -147,7 +147,7 @@ p.tldr {
     align-self: center;
 }
 
-p.tldr span {
+p.tldr span, .back a span {
     color: #ffcc33;
 }
 
@@ -166,5 +166,25 @@ p.tldr span {
 .box-spans {
     display: block;
     width: 330px;
+}
+
+.back {
+    padding: 32px;
+    margin: 0 auto;
+    text-align: center;
+    width: 420px;
+}
+
+.back a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: Stellar-Bold;
+    font-size: 30px;
+    line-height: 1.2em;
+}
+
+.back a:hover {
+    text-decoration: underline;
 }
 
