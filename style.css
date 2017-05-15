@@ -96,19 +96,41 @@ h1.about-me {
     list-style: none;
     width: 570px;
     font-size: 14pt;
+    padding-right: 32px;
 }
 
 .column-2 {
-    display: flex;
+    display: flex; 
 }
 
 #about li {
     padding: 8px 0 ;
 }
 
+#about ul.full-list li {
+    padding: 2px 0; 
+}
+
+#about li a {
+    color: #ffcc33;
+    text-decoration: none;
+}
+
+#about li a:hover {
+    text-decoration: underline;
+}
+
 #about h2 {
-    font-family: Stellar-Light;
+    font-family: Stellar-Bold;
     margin: 12px 0;
+    text-transform: uppercase;
+    color: #3f0051;
+    text-decoration: underline;
+}
+
+#about h3 {
+    margin: 0;
+    padding-top: 16px;
 }
 
 p.tldr {
@@ -118,13 +140,31 @@ p.tldr {
     font-family: Stellar-Bold;
     font-size: 30px;
     max-width: 330px;
-    padding: 6px;
+    padding: 12px;
     line-height: 36px;
     overflow: hidden;
     display: inline;
+    align-self: center;
 }
 
 p.tldr span {
-    display: inline;
-    overflow: hidden;
+    color: #ffcc33;
 }
+
+#about ul.full-list {
+    width: 100%;
+}
+
+#about ul.full-list li:nth-child(3n+1) {
+
+}
+
+.date {
+    font-size: 14px;
+}
+
+.box-spans {
+    display: block;
+    width: 330px;
+}
+
