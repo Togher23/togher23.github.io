@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700');
+@font-face {
+    font-family: Stellar-Light;
+    src: url(fonts/Stellar-light.otf);
+}
+
+@font-face {
+    font-family: Stellar-Bold;
+    src: url(fonts/Stellar-Bold.otf);
+}
+
+body {
+    margin: 0;
+    background-color: #c92424;
+}
+
+.top, .bottom {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: #ffcc33;
+    font-family: Stellar-Light;
+}
+
+.top {
+        top: 10px;
+}
+
+.bottom {
+        bottom: 10px;
+}
+
+.bottom a {
+    color: #ffcc33;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    padding-top: 30vh;
+    width: 600px;
+    margin: 0 auto;
+}
+
+a.main-nav {
+    text-decoration: none;
+    color: white;
+    font-family: Stellar-Light;
+    font-size: 30pt;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+a.main-nav:hover, .bottom a:hover {
+    text-decoration: underline;
+}
+
+.brno {
+    padding: 6px 200px 6px 50px;
+}
+
+.got {
+    padding: 6px 0px 6px 0px;
+}
+
+.mil {
+    padding: 6px 0px 6px 150px;
+}
+
+.main {
+    background-image: url(img/mil-bg.png);
+    background-size: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+h1.about-me {
+    color: white;
+    font-family: Stellar-Light;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 32px;
+}
+
+#about ul {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+    width: 570px;
+    font-size: 14pt;
+}
+
+.column-2 {
+    display: flex;
+}
+
+#about li {
+    padding: 8px 0 ;
+}
+
+#about h2 {
+    font-family: Stellar-Light;
+    margin: 12px 0;
+}
+
+p.tldr {
+    background-color: #3f0051;
+    color: white;
+    text-transform: uppercase;
+    font-family: Stellar-Bold;
+    font-size: 30px;
+    max-width: 330px;
+    padding: 6px;
+    line-height: 36px;
+    overflow: hidden;
+    display: inline;
+}
+
+p.tldr span {
+    display: inline;
+    overflow: hidden;
+}
