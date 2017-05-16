@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700');
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,600,700');
 
 @font-face {
     font-family: Stellar-Light;
@@ -354,7 +354,9 @@ overflow: hidden;
 }
 
 .quote {
+    font-family: 'Source Sans Pro', sans-serif;
     margin-top: 84px;
+    margin-bottom: 32px;
     background-image: url(img/koda.png);
     background-position: center left;
     width: 100%;
@@ -363,22 +365,52 @@ overflow: hidden;
     background-size: 500px 500px;
 }
 
-.quote h4 {
-    font-family: 'Source Sans Pro', sans-serif;
+.quote h4, .quote-2 h4 {
     color: white;
     font-size: 30pt;
     width: 390px;
     text-align: left;
     padding-top: 84px;
-    margin-left: 460px;
+    margin-left: 45%;
     margin-bottom: 10px;
+}
+
+.quote-2 h4 {
+    padding-top: 260px;
+    padding-bottom: 100px;
+    margin-left: 5%;
+    width: 330px;
 }
 
 .quote h5 {
     color: white;
     font-size: 14pt;
     font-weight: 100;
-    margin-left: 640px;
+    margin-left: 65%;
     margin-top: 0;
+    font-style: italic;
+}
+
+.mockups-got {
+    background-image: url(img/mockups-got.png);
+    background-size: 1200px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.quote-2 {
+    background-image: url(img/moose.png);
+    background-size: 450px auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -250px;
+    
 }
 
