@@ -398,7 +398,7 @@ overflow: hidden;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 745px;
     margin: 0 auto;
     top: 0;
     overflow-x: hidden;
@@ -407,10 +407,36 @@ overflow: hidden;
 .quote-2 {
     background-image: url(img/moose.png);
     background-size: 450px auto;
-    background-position: top center;
+    background-position: center top;
     background-repeat: no-repeat;
-    position: relative;
-    top: -250px;
-    
+    overflow: hidden;
 }
 
+.top--250 {
+    position: relative;
+    top: -250px;
+}
+
+.desc-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    width: 100%;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 21px;
+    overflow: hidden;
+    padding: 12px 0;
+    margin: 0 18px;
+}
+
+.border-top {
+    border-top: 3px solid white;
+}
+
+.liseberg {
+    background-image: url(img/liseberg.png);
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+}
