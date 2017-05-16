@@ -16,3 +16,4 @@ function(){
     $(".mil-bg").toggleClass("opacity-1");
     $(".main-main-bg").toggleClass("opacity-0");}
 );
+
