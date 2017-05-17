@@ -1,0 +1,34 @@
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-20%) ;
+      opacity: 0;
+  }
+  100% {
+    transform: translateX(0) ;
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+     0% {
+    transform: translateY(50%) ;
+      opacity: 0;
+  }
+  100% {
+    transform: translateX(0) ;
+      opacity: 1;
+  }
+}
+
+
+.slideInFromTop
+{
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.slideInFromBottom {
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+    
+}
+
+

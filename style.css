@@ -26,6 +26,12 @@ body {
     font-family: Stellar-Light;
 }
 
+.top a {
+    color: #ffcc33;
+    text-decoration: none;
+    
+}
+
 .top {    
     z-index: 1000;
         top: 10px;
@@ -63,12 +69,19 @@ a.main-nav {
 }
 
 h2.main-nav {
-    color: white;
+    color: #ffcc33;
     font-family: Stellar-Light;
     font-size: 14pt;
     text-transform: uppercase;
-    padding-left: 210px;
+    padding-left: 170px;
     text-decoration: underline;
+    margin-bottom: 2px;
+}
+
+h2.check {
+    padding-left: 290px;
+    margin-top: 4px;
+    margin-bottom: 12px;
 }
 
 a.main-nav:hover, .bottom a:hover {
@@ -76,7 +89,7 @@ a.main-nav:hover, .bottom a:hover {
 }
 
 .brno {
-    padding: 6px 200px 6px 50px;
+    padding: 6px 100px 6px 50px;
 }
 
 .got {
@@ -85,6 +98,28 @@ a.main-nav:hover, .bottom a:hover {
 
 .mil {
     padding: 6px 0px 6px 150px;
+}
+
+.welcome p {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    width: 760px;
+    font-weight: 400;
+    margin: 16px auto;
+}
+
+.welcome p:nth-child(3) {
+    width: 420px;
+}
+
+.welcome p span {
+    color: #ffcc33;
+}
+
+.welcome p span.italic {
+    font-style: italic;
 }
 
 .main-bg {
@@ -171,7 +206,7 @@ a.main-nav:hover, .bottom a:hover {
 
 
 
-h1.about-me {
+h1.about-me, .other-projects h2 {
     color: white;
     font-family: Stellar-Light;
     text-align: center;
@@ -182,10 +217,13 @@ h1.about-me {
 #about ul {
     color: white;
     font-family: 'Quicksand', sans-serif;
-    list-style: none;
     width: 570px;
     font-size: 14pt;
     padding-right: 32px;
+}
+
+#about ul>li:nth-child (1) {
+    list-style: none;
 }
 
 .column-2 {
@@ -194,6 +232,11 @@ h1.about-me {
 
 #about li {
     padding: 8px 0 ;
+}
+
+#about li p {
+    margin: 0;
+    padding: 0;
 }
 
 #about ul.full-list li {
@@ -205,7 +248,7 @@ h1.about-me {
     text-decoration: none;
 }
 
-#about li a:hover {
+#about li a:hover, .bottom-menu a:hover {
     text-decoration: underline;
 }
 
@@ -250,8 +293,10 @@ p.tldr span, .back a span, h1.about-me span {
 }
 
 
-.date {
+#about li p.date {
     font-size: 14px;
+    padding: 6px 0;
+    margin: 0
 }
 
 .box-spans {
@@ -306,15 +351,17 @@ overflow: hidden;
     height: 100%;
     background: #3f0051;
     transform: translateX(0);
-    transition: transform 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 .cenzura-1:hover span {
     transform: translateX(100%);
+    background: #ffcc33;
 }
 
 .cenzura-2:hover span {
     transform: translateX(-100%);
+    background: #ffcc33;
 }
 
 .cenzura-2 {
@@ -328,7 +375,7 @@ overflow: hidden;
 
 .phone-ssa {
     z-index: 33;
-    top: 80vh;
+    top: 70vh;
     position: absolute;
     width: 100%;
     background-size: 30vh;
@@ -366,6 +413,8 @@ overflow: hidden;
 }
 
 .quote h4, .quote-2 h4 {
+    
+    font-family: 'Source Sans Pro', sans-serif;
     color: white;
     font-size: 30pt;
     width: 390px;
@@ -377,8 +426,8 @@ overflow: hidden;
 
 .quote-2 h4 {
     padding-top: 260px;
-    padding-bottom: 100px;
-    margin-left: 5%;
+    padding-bottom: 40px;
+    margin-left: 18px;
     width: 330px;
 }
 
@@ -417,13 +466,18 @@ overflow: hidden;
     top: -250px;
 }
 
+.top--130 {
+    position: relative;
+    top: -130px;
+}
+
 .desc-text {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     width: 100%;
-    font-weight: 400;
-    line-height: 30px;
-    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 18px;
     overflow: hidden;
     padding: 12px 0;
     margin: 0 18px;
@@ -439,4 +493,117 @@ overflow: hidden;
     background-position: center bottom;
     background-repeat: no-repeat;
     width: 100%;
+}
+
+.liseberg .back a {
+    font-size: 36px;
+}
+
+.liseberg .back a:hover {
+    color: #ffcc33;
+}
+
+.other-projects h2 {
+    color: #c92424;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+
+.other-projects {
+    background-color: white;
+    width: 100%;background-image: url(img/knot-gun.png);
+    background-size: 40%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
+}
+
+.box-img {
+    width:300px;
+    height: 200px;
+    background: black;
+    margin: 12px 12px;
+    background-size: auto 100%;
+    background-position: center;
+    text-decoration: none;
+    transition:all 0.5s ;
+  -webkit-transition:all 0.5s ;
+  -o-transition:all 0.5s ;
+  -moz-transition:all 0.5s ;
+}
+
+.box-img:hover {
+    background-size: auto 120%;
+    
+}
+
+.box-img:hover h3 {
+    margin-top: 80px;
+    
+}
+
+
+
+a.box-img h3, a.box-img h4 {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 2px auto;
+    background-color: white;
+    color: black;
+    width: 120px;
+    padding:3px;
+    transition:all 0.5s ;
+  -webkit-transition:all 0.5s ;
+  -o-transition:all 0.5s ;
+  -moz-transition:all 0.5s ;
+}
+
+a.box-img h3 {
+    margin-top: 110px;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+
+
+
+
+.cv {
+    background-image: url(img/got/cv.jpg);
+}
+
+.ar {
+    background-image: url(img/got/ar.jpg);
+}
+
+.ail {
+    background-image: url(img/got/AIL.png);
+}
+
+.spil {
+    background-image: url(img/got/spil.png)
+}
+
+.rytir {
+    background-image: url(img/got/rytir.png)
+}
+
+.fk {
+    background-image: url(img/got/fargkoket.png)
+}
+
+.bottom-menu {
+    justify-content: flex-start;
+    display: flex;
+    width: 200px;
+    padding-top: 80px;
+}
+
+.bottom-menu a, .bottom-menu span {
+    color: #c92424;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    font-size: 30pt;
+    font-weight: 700;
+    padding: 8px;
 }
