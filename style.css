@@ -12,6 +12,10 @@
     src: url(fonts/Stellar-Bold.otf);
 }
 
+* {
+    background-repeat: no-repeat;
+}
+
 
 body {
     margin: 0;
@@ -331,6 +335,20 @@ div.heading {
     right: 10vw;
 }
 
+div.heading-brno {
+    left: 10vw;
+    position: absolute;
+    top: 24vh;
+    max-width: 620px;
+}
+
+div.heading-milan {
+    max-width: 620px;
+    top: 24vh;
+    right: 15vw;
+    position: absolute;
+}
+
 p.heading {
     font-size: 36pt;
     line-height:  48pt;
@@ -343,6 +361,28 @@ p.heading {
     height: 40pt;
     top: 48pt;
 overflow: hidden;
+}
+
+div.heading-milan .cenzura-1 {
+    width: 360px;
+    left: 180px;
+}
+
+div.heading-milan .cenzura-2 {
+    width: 293px;
+    left: 0;
+}
+
+div.heading-brno .cenzura-1 {
+    top:0;
+    left: 210px;
+    width: 180px;
+}
+
+div.heading-brno .cenzura-2 {
+    top:96pt;
+    left: 225px;
+    width: 310px;
 }
 
 .cenzura-1 span, .cenzura-2 span {
@@ -373,7 +413,7 @@ overflow: hidden;
     overflow: hidden;
 }
 
-.phone-ssa {
+.phone-ssa, .phone-atm {
     z-index: 33;
     top: 70vh;
     position: absolute;
@@ -387,11 +427,25 @@ overflow: hidden;
     width: 100%;
 }
 
+.phone-atm img {
+    max-width: 30vw;
+    width: 100%;
+}
+
 .text {
     margin-top: 130vh;
 }
 
-.text p {
+.brno-text {
+    margin-top: 110vh;
+}
+
+.milan-text {
+    margin-top: 32px;
+    padding-top: 32px;
+}
+
+.text p, .brno-text p {
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     width: 510px;
@@ -400,20 +454,111 @@ overflow: hidden;
     font-weight: 600;
 }
 
+.brno-text h4 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+.brno-text h5 {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    padding-left: 172px;
+    padding-top: 0;
+    margin-top: 2px;
+}
+
+
+
 .quote {
     font-family: 'Source Sans Pro', sans-serif;
     margin-top: 84px;
     margin-bottom: 32px;
-    background-image: url(img/koda.png);
     background-position: center left;
     width: 100%;
     height: 420px;
-    background-repeat: no-repeat;
     background-size: 500px 500px;
 }
 
-.quote h4, .quote-2 h4 {
+.brno-quote {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 84px;
+    margin-bottom: 32px;
+    width: 100%;
+    height: auto;
+    background-image: url(img/brno/advertia.png);
+    background-position: top center;
+    background-size: 1200px auto;
+}
+
+.mil-quote {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 32px;
+    width: 100%;
+    height: 1200px;
+}
+
+.brno-quote-2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 32px;
+    width: 100%;
+    height: 1200px;
+    background-image: url(img/brno/dragon.png);
+    background-position: top right;
+    background-size: 700px auto;
+}
+
+.posters {
+    height: 1100px;
+}
+
+.vinci img {
+    max-width: 960px;
+    width: 100%;
+    padding-top: 32px;
+    padding-left: 32px;
+    margin: 0 auto;
+}
+
+.brno-quote-2 img {
+    width: 400px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.brno-quote-2 img:nth-child(1):hover, .brno-quote-2 img:nth-child(3):hover {
+    width: 450px;
+    height: auto;
     
+}
+
+.brno-quote-2 img:nth-child(1) {
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+}
+
+.brno-quote-2 img:nth-child(3) {
+    left: 550px;
+    top: -190px;
+    z-index: 1;
+}
+
+.brno-quote-2 img:nth-child(2) {
+    width: 500px;
+    height: auto;
+    top: 230px;
+    left: -180px;
+    z-index: 2;
+}
+
+
+
+.quote h4, .quote-2 h4, .brno-quote h4, .brno-quote-2 h4, .mil-quote h4 {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     font-size: 30pt;
@@ -424,6 +569,24 @@ overflow: hidden;
     margin-bottom: 10px;
 }
 
+.brno-quote h4 {
+    padding-top: 410px;
+    width: 560px;
+}
+
+.mil-quote h4 {
+    margin-left: 0;
+    width: 460px;
+    margin-top: 0;
+    padding-top: 32px;
+}
+
+.brno-quote-2 h4 {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 32px;
+}
+
 .quote-2 h4 {
     padding-top: 260px;
     padding-bottom: 40px;
@@ -431,7 +594,7 @@ overflow: hidden;
     width: 330px;
 }
 
-.quote h5 {
+.quote h5, .mil-quote h5 {
     color: white;
     font-size: 14pt;
     font-weight: 100;
@@ -440,11 +603,22 @@ overflow: hidden;
     font-style: italic;
 }
 
+.mil-quote h5 {
+    font-style: normal;
+    margin-left: 0;
+    max-width: 380px;
+    line-height: 24pt;
+    font-size: 16pt;
+}
+
+.mil-quote img {
+    width: 640px;
+}
+
 .mockups-got {
     background-image: url(img/mockups-got.png);
     background-size: 1200px auto;
     background-position: center center;
-    background-repeat: no-repeat;
     position: relative;
     width: 100%;
     height: 745px;
@@ -457,7 +631,6 @@ overflow: hidden;
     background-image: url(img/moose.png);
     background-size: 450px auto;
     background-position: center top;
-    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -469,6 +642,10 @@ overflow: hidden;
 .top--130 {
     position: relative;
     top: -130px;
+}
+
+.no-margin-top {
+    margin-top: 0;
 }
 
 .desc-text {
@@ -487,12 +664,22 @@ overflow: hidden;
     border-top: 3px solid white;
 }
 
+.border-bottom {
+    border-bottom: 3px solid white;
+}
+
 .liseberg {
     background-image: url(img/liseberg.png);
     background-size: 100%;
     background-position: center bottom;
-    background-repeat: no-repeat;
     width: 100%;
+}
+
+.castelo {
+    background-image: url(img/liseberg.png);
+    background-size: 100%;
+    background-position: center bottom;
+    background-image: url(img/ita/castelo.png);
 }
 
 .liseberg .back a {
@@ -511,12 +698,13 @@ overflow: hidden;
 
 .other-projects {
     background-color: white;
-    width: 100%;background-image: url(img/knot-gun.png);
+    width: 100%;
     background-size: 40%;
     background-position: bottom right;
-    background-repeat: no-repeat;
     padding-bottom: 150px;
 }
+
+
 
 .box-img {
     width:300px;
@@ -566,7 +754,67 @@ a.box-img h3 {
 
 
 
+.mrkev {
+    background-image: url(img/brno/mrkev.png);
+    background-position: top right;
+    background-size: 400px auto;
+}
 
+.ipad-img {
+    position: relative;
+    top: -160px;
+    width: 780px;
+    left: 200px;
+}
+
+p.max-width-400 {
+    max-width: 400px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.greg h4 {
+    margin-left: 60%;
+}
+
+
+.greg h5 {
+    margin-left: 85%;
+}
+
+.vinci {
+    width: 80%;
+    background-image: url(img/ita/leo.png);
+    background-position: right top;
+    background-size: 600px auto;
+    margin: 0 auto;
+}
+
+.greg {
+    background-image: url(img/ita/greg.png);
+    background-size: 650px auto;
+    margin-top: 48px;
+}
+
+.gg {
+    
+    background-position: top right;
+    background-size: 700px auto;
+    background-image: url(img/ita/GG.png);
+}
+
+.koda {
+    background-image: url(img/koda.png);
+}
+
+.knot {
+    background-image: url(img/knot-gun.png);
+}
+
+.jost {
+    
+    background-image: url(img/brno/jost.png);
+}
 
 .cv {
     background-image: url(img/got/cv.jpg);
@@ -592,6 +840,52 @@ a.box-img h3 {
     background-image: url(img/got/fargkoket.png)
 }
 
+.rak {
+    background-image: url(img/brno/rak.png)
+}
+
+.hvt {
+    background-image: url(img/brno/hvt.png)
+}
+
+.tos {
+    background-image: url(img/brno/tos.png)
+}
+
+.sci {
+    background-image: url(img/brno/sci.png)
+}
+
+.for {
+    background-image: url(img/brno/forum.png)
+}
+
+.hep {
+    background-image: url(img/brno/hep.png);
+}
+
+.western-bg {
+    background-image: url(img/brno/cactus.png), url(img/brno/postavy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 450px top, bottom left;
+    background-size: 180px auto, 350px auto;
+    height: 700px;
+    margin-bottom: 32px;
+}
+
+.western-bg a{
+    position: relative;
+    display: block;
+    top: -270px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    left: 700px;
+    padding-bottom: 8px;
+}
+
 .bottom-menu {
     justify-content: flex-start;
     display: flex;
@@ -606,4 +900,63 @@ a.box-img h3 {
     font-size: 30pt;
     font-weight: 700;
     padding: 8px;
+}
+
+.iphone-box {
+    position: relative;
+}
+
+.iphones-right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 400px;
+}
+
+.iphones-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.iphones-1 {
+    background-image: url(img/ita/ipohone-right.png);
+    background-size: 650px auto;
+    width: 650px;
+    height: 450px;
+}
+
+.iphones-2 {
+    background-image: url(img/ita/ipohone-left.png);
+    background-size: 650px auto;
+    width: 650px;
+    height: 450px;
+    position: relative;
+    top: 210px;
+}
+
+
+.iphone-left .shadow {
+    top: -150px;
+}
+
+.iphones-right .shadow {
+    top: -50px;
+}
+
+.shadow {
+    background-image: url(img/ita/ipohone-shadow.png);
+    background-size: 720px auto;
+    width: 650px;
+    height: 450px;
+    position: relative;
+}
+
+.iphones-box {
+    position: relative;
+    height:  450px;
+}
+
+.mil-quote p {
+    width: 360px;
 }

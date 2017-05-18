@@ -20,6 +20,30 @@
   }
 }
 
+@keyframes hover {
+     0% {
+    transform: translateY(2%) ;
+  }
+  50% {
+    transform: translateY(0);
+  }
+    100% {
+    transform: translateY(2%) ;
+  }
+}
+
+@keyframes hover2 {
+     0% {
+    transform: translateY(2%) ;
+  }
+  50% {
+    transform: translateY(0);
+  }
+    100% {
+    transform: translateY(2%) ;
+  }
+}
+
 
 .slideInFromTop
 {
@@ -29,6 +53,21 @@
 .slideInFromBottom {
     animation: 1s ease-out 0s 1 slideInFromBottom;
     
+}
+
+.hover {
+    animation-name: hover;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.hover2 {
+    animation-name: hover;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
 }
 
 
