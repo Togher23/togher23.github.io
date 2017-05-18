@@ -93,7 +93,7 @@ a.main-nav:hover, .bottom a:hover {
 }
 
 .brno {
-    padding: 6px 100px 6px 50px;
+    padding: 6px 90px 6px 50px;
 }
 
 .got {
@@ -156,6 +156,8 @@ a.main-nav:hover, .bottom a:hover {
 
 .me {
     background-image: url(img/bg.png);
+    background-size: cover;
+    background-position: left;
 }
 
 
@@ -376,7 +378,7 @@ div.heading-milan .cenzura-2 {
 div.heading-brno .cenzura-1 {
     top:0;
     left: 210px;
-    width: 180px;
+    width: 210px;
 }
 
 div.heading-brno .cenzura-2 {
@@ -811,6 +813,10 @@ p.max-width-400 {
     background-image: url(img/knot-gun.png);
 }
 
+.map {
+    background-image: url(img/ita/map.png);
+}
+
 .jost {
     
     background-image: url(img/brno/jost.png);
@@ -863,6 +869,35 @@ p.max-width-400 {
 .hep {
     background-image: url(img/brno/hep.png);
 }
+
+.sr {
+    background-image: url(img/ita/SR.png);
+}
+
+.dag {
+    background-image: url(img/ita/dag.png);
+}
+
+.gw {
+    background-image: url(img/ita/gw.png);
+}
+
+.kri {
+    background-image: url(img/ita/kri.png);
+}
+
+.pra {
+    background-image: url(img/ita/pra.png);
+}
+
+.sw {
+    background-image: url(img/ita/sw.png);
+}
+
+
+
+
+
 
 .western-bg {
     background-image: url(img/brno/cactus.png), url(img/brno/postavy.png);
