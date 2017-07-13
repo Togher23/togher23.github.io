@@ -30,6 +30,10 @@ body {
     font-family: Stellar-Light;
 }
 
+.real {
+    color: aqua;
+}
+
 .top a {
     color: #ffcc33;
     text-decoration: none;
